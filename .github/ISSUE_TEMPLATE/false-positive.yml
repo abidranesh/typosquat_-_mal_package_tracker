@@ -1,0 +1,59 @@
+name: False positive report
+description: A package is listed as suspicious and should not be
+title: "False positive: "
+labels: ["false-positive"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. PkgWatch is automated and makes mistakes; reports like
+        this are how the detectors get better.
+  - type: input
+    id: package
+    attributes:
+      label: Package
+      description: Ecosystem, name and version, for example `npm/some-package@1.2.3`
+      placeholder: npm/some-package@1.2.3
+    validations:
+      required: true
+  - type: dropdown
+    id: finding
+    attributes:
+      label: Which finding is wrong?
+      multiple: true
+      options:
+        - typosquat
+        - name-manipulation
+        - combosquat
+        - dependency-confusion
+        - new-publisher-similar-name
+        - sparse-metadata
+        - repo-impersonation
+        - popular-package-change
+        - npm-install-hook
+        - python-install-code
+        - obfuscation
+        - exfiltration
+        - suspicious-endpoint
+        - binary-dropper
+        - unsafe-archive
+        - Not sure / the listing as a whole
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this behaviour legitimate?
+      description: What does the flagged code or name actually do? A link to the source file helps most.
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the package
+      options:
+        - I maintain it
+        - I use it
+        - Neither, I just noticed
+    validations:
+      required: false

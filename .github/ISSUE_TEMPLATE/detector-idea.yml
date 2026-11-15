@@ -1,0 +1,47 @@
+name: New detector idea
+description: Propose a new indicator, or an improvement to an existing detector
+title: "Detector idea: "
+labels: ["detector-idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe patterns, not samples. **Do not paste or attach working malicious
+        code.** A link to a public write-up of the attack is ideal.
+  - type: textarea
+    id: pattern
+    attributes:
+      label: What should be detected?
+      description: The pattern in a package's name, metadata or contents.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Where has this been seen?
+      description: Links to public advisories or write-ups of real incidents.
+    validations:
+      required: false
+  - type: textarea
+    id: near-misses
+    attributes:
+      label: Legitimate packages that look similar
+      description: What should the detector not fire on? This is what decides whether a detector is usable.
+    validations:
+      required: true
+  - type: dropdown
+    id: ecosystem
+    attributes:
+      label: Ecosystem
+      multiple: true
+      options:
+        - npm
+        - PyPI
+    validations:
+      required: true
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to implement this myself
