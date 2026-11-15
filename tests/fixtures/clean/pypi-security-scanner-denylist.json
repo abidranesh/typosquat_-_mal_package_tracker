@@ -1,0 +1,25 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "leakguard_hooks/rules.py": "import re\n\nimport requests\n\nSENSITIVE = re.compile(r\"(?:~/\\.ssh/|/\\.aws/credentials|\\.npmrc|\\.pypirc|\\.netrc|id_rsa)\")\nTUNNEL_HOSTS = (\"ngrok.io\", \"pipedream.net\", \"oast.fun\", \"webhook.site\")\nENV_TO_NET = re.compile(r\"\\b(?:env|printenv)\\b\\s*[|]\\s*(?:curl|nc)\")\n\n\ndef fetch_rules(url):\n    return requests.get(url, timeout=10).json()\n\n\ndef is_sensitive(path):\n    return bool(SENSITIVE.search(path))\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "wheel:pure"
+  ],
+  "created_days_ago": 900,
+  "description": "leakguard-hooks: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# leakguard-hooks\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/leakguard-hooks",
+  "version_count": 12
+ },
+ "name": "leakguard-hooks",
+ "pattern": "Security tool that lists sensitive paths and tunnel hosts as patterns, and uses HTTP (near miss)",
+ "version": "1.3.0"
+}

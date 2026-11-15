@@ -1,0 +1,20 @@
+{
+ "allowed": [
+  "sparse-metadata"
+ ],
+ "ecosystem": "npm",
+ "expected": [],
+ "files": {
+  "package/index.js": "module.exports = function wait(ms) { return new Promise((r) => setTimeout(r, ms)); };\n",
+  "package/package.json": "{\n  \"name\": \"zebra-crossing-timer\",\n  \"version\": \"0.0.1\",\n  \"main\": \"index.js\"\n}"
+ },
+ "meta": {
+  "created_days_ago": 1,
+  "description": "",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "zebra-crossing-timer",
+ "pattern": "Brand-new package with thin metadata and an unrelated name: unlisted on its own",
+ "version": "0.0.1"
+}

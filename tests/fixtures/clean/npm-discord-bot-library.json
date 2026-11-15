@@ -1,0 +1,23 @@
+{
+ "ecosystem": "npm",
+ "expected": [],
+ "files": {
+  "package/index.js": "const API = \"https://discord.com/api/v10\";\n\nmodule.exports = async function sendMessage(channel, content) {\n  const res = await fetch(`${API}/channels/${channel}/messages`, {\n    method: \"POST\",\n    headers: { Authorization: `Bot ${process.env.DISCORD_TOKEN}`, \"Content-Type\": \"application/json\" },\n    body: JSON.stringify({ content }),\n  });\n  return res.json();\n};\n",
+  "package/package.json": "{\n  \"name\": \"tiny-discord-client\",\n  \"version\": \"0.9.1\",\n  \"main\": \"index.js\"\n}"
+ },
+ "meta": {
+  "created_days_ago": 900,
+  "description": "tiny-discord-client: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# tiny-discord-client\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/tiny-discord-client",
+  "version_count": 12
+ },
+ "name": "tiny-discord-client",
+ "pattern": "Discord bot library using the normal REST API and a token from the environment (near miss)",
+ "version": "0.9.1"
+}

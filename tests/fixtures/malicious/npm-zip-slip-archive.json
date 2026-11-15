@@ -1,0 +1,18 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "unsafe-archive",
+  "sparse-metadata"
+ ],
+ "files": {},
+ "meta": {
+  "archive_error": "unsafe: path traversal in archive: 'package/../../../.bashrc'",
+  "created_days_ago": 1,
+  "description": "archive helper",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "tar-escape-fixture",
+ "pattern": "Archive whose entries escape the extraction root (zip-slip)",
+ "version": "1.0.0"
+}

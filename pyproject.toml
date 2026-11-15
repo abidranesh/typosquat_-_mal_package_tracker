@@ -1,0 +1,32 @@
+[project]
+name = "pkgwatch"
+version = "1.0.0"
+description = "PkgWatch: static watcher for suspicious new npm and PyPI packages"
+requires-python = ">=3.12"
+license = "MIT"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["tests/fixtures", "dry-run-out"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4"]
+ignore = ["SIM102"]
+
+[tool.ruff.lint.per-file-ignores]
+# Verbose regular expressions and embedded fixture sources read better unwrapped.
+"pkgwatch/detectors/*.py" = ["E501"]
+"scripts/build_fixtures.py" = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["pkgwatch"]
+omit = ["pkgwatch/__main__.py"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

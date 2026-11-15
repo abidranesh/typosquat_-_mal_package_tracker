@@ -1,0 +1,29 @@
+{
+ "source": "fixture",
+ "count": 23,
+ "packages": [
+  "requests",
+  "colorama",
+  "numpy",
+  "pandas",
+  "django",
+  "flask",
+  "urllib3",
+  "boto3",
+  "setuptools",
+  "pip",
+  "six",
+  "python-dateutil",
+  "pyyaml",
+  "click",
+  "jinja2",
+  "cryptography",
+  "pytest",
+  "scipy",
+  "pillow",
+  "attrs",
+  "certifi",
+  "idna",
+  "packaging"
+ ]
+}

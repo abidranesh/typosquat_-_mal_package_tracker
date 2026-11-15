@@ -1,0 +1,26 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "gitwrap-cli-0.3.0/gitwrap/cli.py": "import subprocess\nimport sys\n\n\ndef main():\n    result = subprocess.run([\"git\", *sys.argv[1:]], check=False)\n    return result.returncode\n",
+  "gitwrap-cli-0.3.0/setup.py": "from setuptools import setup\n\nsetup(name=\"gitwrap-cli\", version=\"0.3.0\", packages=[\"gitwrap\"])\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "sdist"
+  ],
+  "created_days_ago": 20,
+  "description": "gitwrap-cli: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# gitwrap-cli\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/gitwrap-cli",
+  "version_count": 2
+ },
+ "name": "gitwrap-cli",
+ "pattern": "New CLI tool that uses subprocess in its runtime module, not at install time (near miss)",
+ "version": "0.3.0"
+}

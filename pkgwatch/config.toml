@@ -1,0 +1,103 @@
+# PkgWatch configuration. Every weight and threshold used by the scanner lives here.
+
+[project]
+name = "PkgWatch"
+repo = "abidranesh/typosquat_-_mal_package_tracker"
+site_url = "https://abidranesh.github.io/typosquat_-_mal_package_tracker/"
+user_agent = "PkgWatch/1.0 (+https://github.com/abidranesh/typosquat_-_mal_package_tracker)"
+
+[limits]
+max_download_bytes = 10485760        # 10 MB per archive
+max_metadata_bytes = 26214400        # 25 MB per registry metadata document
+max_uncompressed_bytes = 52428800    # 50 MB per archive, uncompressed
+max_files = 5000
+max_file_bytes = 1048576             # bytes kept in memory per file for analysis
+max_scan_bytes = 4194304             # total code scanned by pattern detectors per package
+max_scan_file_bytes = 262144         # code scanned per file
+http_timeout_seconds = 20
+concurrency = 8
+max_retries = 4
+backoff_base_seconds = 1.0
+backoff_max_seconds = 30.0
+max_packages_per_run = 2000
+run_deadline_seconds = 720           # stop starting new packages after 12 minutes
+npm_recent_hours = 48                # ignore npm changes whose newest version is older
+max_issues_per_run = 15
+
+[thresholds]
+low = 15
+medium = 40
+high = 70
+max_score = 100
+
+[output]
+latest_max = 500
+retention_days = 365
+stats_window_days = 90
+hourly_window_hours = 48
+feed_items = 100
+
+[names]
+typosquat_top_n = 8000
+combosquat_top_n = 1500
+min_name_length = 4
+short_name_length = 5                # names this short only match at distance 1
+established_days = 180               # name findings are halved for packages older than this
+prefixes = ["python-", "py-", "python3-", "js-", "node-", "npm-"]
+suffixes = ["-py", "-python", "-js", "-node", "-dev", "-utils", "-util", "-official", "-secure", "-security", "-lib", "-new", "-latest"]
+generic_words = [
+  "helper", "helpers", "tools", "tool", "toolkit", "core", "plus", "pro", "extra", "extended",
+  "wrapper", "client", "sdk", "api", "cli", "update", "updater", "fix", "patch", "next", "v2", "v3",
+  "safe", "fast", "lite", "mini", "simple", "easy", "addon", "addons", "plugin", "kit", "pack",
+  "module", "modules", "package", "service", "manager", "installer", "setup", "config", "auth", "login",
+]
+internal_markers = ["internal", "private", "corp", "intranet", "infra-internal"]
+dependency_confusion_major = 90
+# Known-good names that sit close to a popular name (legitimate forks or siblings).
+allowlist = [
+  "requests2", "preact", "redux", "reduxjs", "react", "reactjs", "vue", "vuex", "lodash-es", "lodash.es",
+  "numpy", "numba", "pandas", "pandera", "attrs", "attr", "ruff", "rich", "click", "clink", "flask", "flake8",
+  "black", "blake3", "express", "expresso", "moment", "momentjs", "axios", "nuxt", "next", "nest", "jest",
+  "zod", "yup", "tap", "tape", "chai", "mocha", "koa", "pug", "ejs", "ajv", "ava", "qs", "ws", "pg",
+]
+
+[weights]
+typosquat_distance_1 = 25
+typosquat_distance_2 = 12
+typosquat_short_name = 12            # one edit on a name of 5 characters or fewer
+homoglyph = 30
+separator_swap = 20
+affix = 12
+scope_confusion = 25
+combosquat = 12
+dependency_confusion = 35
+high_first_version = 15
+new_publisher_similar_name = 20
+sparse_metadata_each = 4
+repo_impersonation = 25
+popular_new_maintainer = 15
+popular_size_jump = 10
+popular_version_jump = 10
+install_hook_plain = 12
+install_hook_node_file = 25
+install_hook_risky = 40
+setup_exec = 30
+setup_exec_decoded = 45
+setup_network = 25
+setup_process = 25
+setup_base64 = 15
+setup_file_write = 15
+setup_cmdclass_install = 15
+pth_executable = 30
+obfuscated_exec = 45
+high_entropy_string = 12
+encoded_blob = 8
+fromcharcode_chain = 20
+minified_tiny_package = 10
+credential_access_network = 40
+env_exfiltration = 30
+suspicious_endpoint = 30
+raw_ip_url = 20
+unexpected_binary = 20
+download_and_execute = 35
+unsafe_archive = 40

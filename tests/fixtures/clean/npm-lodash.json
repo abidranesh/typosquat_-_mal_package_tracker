@@ -1,0 +1,24 @@
+{
+ "ecosystem": "npm",
+ "expected": [],
+ "files": {
+  "package/fp.js": "module.exports = require('./lodash');\n",
+  "package/lodash.js": "module.exports = { chunk: function (a, n) { return [a.slice(0, n)]; } };\n",
+  "package/package.json": "{\n  \"name\": \"lodash\",\n  \"version\": \"4.17.21\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"echo ok\"\n  }\n}"
+ },
+ "meta": {
+  "created_days_ago": 900,
+  "description": "lodash: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# lodash\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/lodash",
+  "version_count": 12
+ },
+ "name": "lodash",
+ "pattern": "Popular utility library, no scripts",
+ "version": "4.17.21"
+}

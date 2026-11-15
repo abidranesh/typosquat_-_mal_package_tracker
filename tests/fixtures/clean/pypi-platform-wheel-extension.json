@@ -1,0 +1,28 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "fastjson_ext/__init__.py": "from ._speedups import loads\n"
+ },
+ "files_b64": {
+  "fastjson_ext/_speedups.cpython-312-x86_64-linux-gnu.so": "f0VMRgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+ },
+ "meta": {
+  "archive_kinds": [
+   "wheel:platform"
+  ],
+  "created_days_ago": 900,
+  "description": "fastjson-ext: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# fastjson-ext\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/fastjson-ext",
+  "version_count": 12
+ },
+ "name": "fastjson-ext",
+ "pattern": "Platform wheel that legitimately contains a compiled extension module",
+ "version": "2.0.1"
+}

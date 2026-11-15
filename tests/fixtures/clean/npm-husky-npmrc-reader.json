@@ -1,0 +1,23 @@
+{
+ "ecosystem": "npm",
+ "expected": [],
+ "files": {
+  "package/index.js": "const fs = require(\"fs\");\nconst os = require(\"os\");\nconst path = require(\"path\");\n\nmodule.exports = function readRegistry() {\n  const file = path.join(os.homedir(), \".npmrc\");\n  const line = fs.readFileSync(file, \"utf8\").split(\"\\n\").find((l) => l.startsWith(\"registry=\"));\n  return line ? line.slice(\"registry=\".length) : \"https://registry.npmjs.org/\";\n};\n",
+  "package/package.json": "{\n  \"name\": \"registry-config-reader\",\n  \"version\": \"2.1.0\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"postinstall\": \"husky install\"\n  }\n}"
+ },
+ "meta": {
+  "created_days_ago": 900,
+  "description": "registry-config-reader: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# registry-config-reader\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/registry-config-reader",
+  "version_count": 12
+ },
+ "name": "registry-config-reader",
+ "pattern": "App with a husky postinstall and a config reader that touches ~/.npmrc without any network use",
+ "version": "2.1.0"
+}

@@ -1,0 +1,29 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "requests-2.32.3/requests/__version__.py": "__version__ = \"2.32.3\"\n",
+  "requests-2.32.3/requests/api.py": "from . import sessions\n\n\ndef get(url, **kwargs):\n    with sessions.Session() as session:\n        return session.request(\"GET\", url, **kwargs)\n",
+  "requests-2.32.3/requests/utils.py": "import os\n\n\ndef get_netrc_auth(url):\n    \"\"\"Read credentials for ``url`` from the user's ~/.netrc file.\"\"\"\n    path = os.path.expanduser(\"~/.netrc\")\n    return path if os.path.exists(path) else None\n",
+  "requests-2.32.3/setup.py": "import os\n\nfrom setuptools import setup\n\nabout = {}\nhere = os.path.abspath(os.path.dirname(__file__))\nwith open(os.path.join(here, \"requests\", \"__version__.py\")) as f:\n    exec(f.read(), about)\n\nsetup(name=\"requests\", version=about[\"__version__\"], packages=[\"requests\"])\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "sdist",
+   "wheel:pure"
+  ],
+  "created_days_ago": 900,
+  "description": "requests: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# requests\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/requests",
+  "version_count": 12
+ },
+ "name": "requests",
+ "pattern": "Popular package; setup.py uses the exec(open(version file).read()) idiom",
+ "version": "2.32.3"
+}

@@ -1,0 +1,26 @@
+{
+ "ecosystem": "npm",
+ "expected": [],
+ "files": {
+  "package/index.js": "module.exports = require('./cbor-fast-node.' + process.platform + '-' + process.arch + '.node');\n",
+  "package/package.json": "{\n  \"name\": \"cbor-fast-node\",\n  \"version\": \"0.19.8\",\n  \"main\": \"index.js\"\n}"
+ },
+ "files_b64": {
+  "package/cbor-fast-node.linux-x64-gnu.node": "f0VMRgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+ },
+ "meta": {
+  "created_days_ago": 900,
+  "description": "cbor-fast-node: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# cbor-fast-node\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/cbor-fast-node",
+  "version_count": 12
+ },
+ "name": "cbor-fast-node",
+ "pattern": "napi-rs style package shipping prebuilt .node addons at the package root",
+ "version": "0.19.8"
+}

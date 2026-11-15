@@ -1,0 +1,35 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "popular-package-change",
+  "npm-install-hook",
+  "obfuscation"
+ ],
+ "files": {
+  "package/index.js": "module.exports = require('./lib/stream');\n",
+  "package/lib/loader.js": "var blob = \"cHJpbnQoJ3N5bnRoZXRpYyBQa2dXYXRjaCBmaXh0dXJlOiBub3RoaW5nIGhhcHBlbnMgaGVyZScpCg==\";\neval(atob(blob));\n",
+  "package/lib/stream.js": "module.exports = function through() { return {}; };\n",
+  "package/package.json": "{\n  \"name\": \"event-stream\",\n  \"version\": \"3.3.6\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"postinstall\": \"node lib/loader.js\"\n  }\n}"
+ },
+ "meta": {
+  "created_days_ago": 900,
+  "description": "event-stream: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer",
+   "right9ctrl-fixture"
+  ],
+  "previous_maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_size": 120000,
+  "previous_version": "3.3.5",
+  "publisher_is_new": false,
+  "readme": "# event-stream\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/event-stream",
+  "size": 900000,
+  "version_count": 12
+ },
+ "name": "event-stream",
+ "pattern": "Maintainer takeover of a popular package: new maintainer, new install script, hidden loader",
+ "version": "3.3.6"
+}

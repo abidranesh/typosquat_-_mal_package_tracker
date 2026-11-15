@@ -1,0 +1,27 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "colorama-0.4.6.dist-info/METADATA": "Name: colorama\nVersion: 0.4.6\n",
+  "colorama/__init__.py": "from .ansi import Fore\n",
+  "colorama/ansi.py": "class Fore:\n    RED = '\\033[31m'\n    RESET = '\\033[39m'\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "wheel:pure"
+  ],
+  "created_days_ago": 900,
+  "description": "colorama: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# colorama\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/colorama",
+  "version_count": 12
+ },
+ "name": "colorama",
+ "pattern": "Popular pure-Python wheel with no install-time code",
+ "version": "0.4.6"
+}

@@ -1,0 +1,27 @@
+{
+ "ecosystem": "npm",
+ "expected": [],
+ "files": {
+  "package/bcrypt.js": "module.exports = require('node-gyp-build')(__dirname);\n",
+  "package/binding.gyp": "{\"targets\": [{\"target_name\": \"bcrypt_lib\"}]}\n",
+  "package/package.json": "{\n  \"name\": \"bcrypt\",\n  \"version\": \"5.1.1\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"install\": \"node-gyp-build || node-gyp rebuild\"\n  },\n  \"gypfile\": true\n}"
+ },
+ "files_b64": {
+  "package/prebuilds/linux-x64/bcrypt.node": "f0VMRgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+ },
+ "meta": {
+  "created_days_ago": 900,
+  "description": "bcrypt: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# bcrypt\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/bcrypt",
+  "version_count": 12
+ },
+ "name": "bcrypt",
+ "pattern": "Native addon: node-gyp install script and a compiled .node file (near miss)",
+ "version": "5.1.1"
+}

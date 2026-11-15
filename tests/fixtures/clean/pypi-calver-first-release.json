@@ -1,0 +1,25 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "tide_tables_nl/__init__.py": "__version__ = '2026.11.1'\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "wheel:pure"
+  ],
+  "created_days_ago": 1,
+  "description": "tide-tables-nl: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# tide-tables-nl\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/tide-tables-nl",
+  "version_count": 1
+ },
+ "name": "tide-tables-nl",
+ "pattern": "First release using calendar versioning (near miss for the high-version check)",
+ "version": "2026.11.1"
+}

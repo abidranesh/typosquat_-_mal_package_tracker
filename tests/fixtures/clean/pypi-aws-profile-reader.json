@@ -1,0 +1,26 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "aws_profile_switcher/profiles.py": "import configparser\nimport os\n\n\ndef list_profiles():\n    parser = configparser.ConfigParser()\n    parser.read(os.path.expanduser(\"~/.aws/credentials\"))\n    return parser.sections()\n",
+  "aws_profile_switcher/update_check.py": "import requests\n\n\ndef latest_version():\n    return requests.get(\"https://pypi.org/pypi/aws-profile-switcher/json\", timeout=5).json()[\"info\"][\"version\"]\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "wheel:pure"
+  ],
+  "created_days_ago": 900,
+  "description": "aws-profile-switcher: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# aws-profile-switcher\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/aws-profile-switcher",
+  "version_count": 12
+ },
+ "name": "aws-profile-switcher",
+ "pattern": "Config helper that reads ~/.aws/credentials in one module and uses HTTP in another (near miss)",
+ "version": "1.4.2"
+}

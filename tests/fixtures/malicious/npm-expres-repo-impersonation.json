@@ -1,0 +1,24 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "typosquat",
+  "new-publisher-similar-name",
+  "repo-impersonation"
+ ],
+ "files": {
+  "package/index.js": "module.exports = require('./lib/express');\n",
+  "package/lib/express.js": "module.exports = function createApplication() { return {}; };\n",
+  "package/package.json": "{\n  \"name\": \"expres\",\n  \"version\": \"4.19.3\",\n  \"main\": \"index.js\"\n}"
+ },
+ "meta": {
+  "created_days_ago": 1,
+  "description": "Fast, unopinionated, minimalist web framework",
+  "publisher_is_new": true,
+  "readme": "# express\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/expressjs/express",
+  "version_count": 1
+ },
+ "name": "expres",
+ "pattern": "express typosquat that copies the real project's repository link",
+ "version": "4.19.3"
+}

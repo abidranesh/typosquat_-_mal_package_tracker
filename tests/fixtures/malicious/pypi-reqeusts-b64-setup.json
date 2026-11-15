@@ -1,0 +1,27 @@
+{
+ "ecosystem": "pypi",
+ "expected": [
+  "typosquat",
+  "new-publisher-similar-name",
+  "sparse-metadata",
+  "python-install-code",
+  "obfuscation"
+ ],
+ "files": {
+  "reqeusts-2.31.1/reqeusts/__init__.py": "from .api import get\n",
+  "reqeusts-2.31.1/reqeusts/api.py": "def get(url):\n    return url\n",
+  "reqeusts-2.31.1/setup.py": "import base64\nfrom setuptools import setup\n\npayload = \"cHJpbnQoJ3N5bnRoZXRpYyBQa2dXYXRjaCBmaXh0dXJlOiBub3RoaW5nIGhhcHBlbnMgaGVyZScpCg==\"\nexec(base64.b64decode(payload))\n\nsetup(name=\"reqeusts\", version=\"2.31.1\", packages=[\"reqeusts\"])\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "sdist"
+  ],
+  "created_days_ago": 1,
+  "description": "",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "reqeusts",
+ "pattern": "Typosquat of requests with a base64-exec setup.py dropper",
+ "version": "2.31.1"
+}

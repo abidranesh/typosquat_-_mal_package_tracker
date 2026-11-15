@@ -1,0 +1,26 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "numpy-1.26.4/numpy/__init__.py": "__version__ = '1.26.4'\n",
+  "numpy-1.26.4/setup.py": "import subprocess\n\nfrom setuptools import setup\nfrom setuptools.command.build_ext import build_ext\n\n\nclass BuildExt(build_ext):\n    def run(self):\n        build_ext.run(self)\n\n\ndef git_version():\n    try:\n        return subprocess.check_output([\"git\", \"describe\", \"--tags\"]).decode().strip()\n    except Exception:\n        return \"unknown\"\n\n\nsetup(name=\"numpy\", version=\"1.26.4\", cmdclass={\"build_ext\": BuildExt})\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "sdist"
+  ],
+  "created_days_ago": 900,
+  "description": "numpy: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# numpy\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/numpy",
+  "version_count": 12
+ },
+ "name": "numpy",
+ "pattern": "Popular package with a custom build_ext and a git-describe version lookup",
+ "version": "1.26.4"
+}

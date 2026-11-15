@@ -1,0 +1,25 @@
+{
+ "ecosystem": "pypi",
+ "expected": [],
+ "files": {
+  "taskrunner_launch/runtime.py": "import os\nimport subprocess\nfrom urllib.request import urlopen\n\n\ndef latest():\n    with urlopen(\"https://pypi.org/pypi/taskrunner-launch/json\", timeout=5) as response:\n        return response.read()\n\n\ndef launch(command):\n    environment = os.environ.copy()\n    environment[\"TASKRUNNER\"] = \"1\"\n    return subprocess.run(command, env=environment, check=False).returncode\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "wheel:pure"
+  ],
+  "created_days_ago": 900,
+  "description": "taskrunner-launch: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# taskrunner-launch\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/taskrunner-launch",
+  "version_count": 12
+ },
+ "name": "taskrunner-launch",
+ "pattern": "Launcher that copies the environment for a child process and checks for updates (near miss)",
+ "version": "0.8.2"
+}

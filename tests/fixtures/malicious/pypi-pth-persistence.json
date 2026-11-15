@@ -1,0 +1,24 @@
+{
+ "ecosystem": "pypi",
+ "expected": [
+  "python-install-code",
+  "obfuscation",
+  "sparse-metadata"
+ ],
+ "files": {
+  "fastlog_speedups.pth": "import os; exec(__import__('base64').b64decode('cHJpbnQoJ3N5bnRoZXRpYyBQa2dXYXRjaCBmaXh0dXJlOiBub3RoaW5nIGhhcHBlbnMgaGVyZScpCg=='))\n",
+  "fastlog_speedups/__init__.py": "__version__ = '1.2.0'\n"
+ },
+ "meta": {
+  "archive_kinds": [
+   "wheel:pure"
+  ],
+  "created_days_ago": 1,
+  "description": "C speedups for fastlog",
+  "publisher_is_new": true,
+  "version_count": 1
+ },
+ "name": "fastlog-speedups",
+ "pattern": "Executable .pth file that decodes and runs code on every interpreter start",
+ "version": "1.2.0"
+}

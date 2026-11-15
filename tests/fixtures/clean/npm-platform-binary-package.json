@@ -1,0 +1,25 @@
+{
+ "ecosystem": "npm",
+ "expected": [],
+ "files": {
+  "package/package.json": "{\n  \"name\": \"@fastbuild/win32-x64\",\n  \"version\": \"0.21.5\",\n  \"main\": \"index.js\",\n  \"os\": [\n    \"win32\"\n  ],\n  \"cpu\": [\n    \"x64\"\n  ]\n}"
+ },
+ "files_b64": {
+  "package/fastbuild.exe": "TVoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+ },
+ "meta": {
+  "created_days_ago": 900,
+  "description": "@fastbuild/win32-x64: a documented utility library",
+  "maintainers": [
+   "longtime-maintainer"
+  ],
+  "previous_version": "1.0.0",
+  "publisher_is_new": false,
+  "readme": "# @fastbuild/win32-x64\n\nA small, well documented library. Install it with your package manager, import it, and call the functions described below.\n\n## Usage\n\nSee the examples directory for complete programs.\n",
+  "repository_url": "https://github.com/example-org/win32-x64",
+  "version_count": 12
+ },
+ "name": "@fastbuild/win32-x64",
+ "pattern": "Platform-specific binary package declaring os and cpu (like esbuild's per-platform packages)",
+ "version": "0.21.5"
+}
