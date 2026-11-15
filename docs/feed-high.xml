@@ -5,7 +5,17 @@
     <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/</link>
     <description>PkgWatch statically analyses newly published npm and PyPI packages and lists the ones that look suspicious. Entries are leads for human review, not verdicts.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 10:59:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 11:20:55 GMT</lastBuildDate>
+    <item>
+      <title>[HIGH 84] suspicious npm package: @dreamlake/dreamlake-cli 0.125.3</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@dreamlake/dreamlake-cli/0.125.3</link>
+      <guid isPermaLink="false">pkgwatch:npm/@dreamlake/dreamlake-cli/0.125.3</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>obfuscation</category>
+      <category>binary-dropper</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 84/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;li&gt;Missing or placeholder README.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@dreamlake/dreamlake-cli/v/0.125.3"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40dreamlake%2Fdreamlake-cli%400.125.3&amp;amp;package=npm%2F%40dreamlake%2Fdreamlake-cli%400.125.3"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[HIGH 75] suspicious pypi package: mystack-rig 1.1.0</title>
       <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/mystack-rig/1.1.0</link>

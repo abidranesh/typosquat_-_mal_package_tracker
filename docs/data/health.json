@@ -1,13 +1,13 @@
 {
- "duration_seconds": 258.4,
- "flagged": 24,
- "last_success": "2026-11-15T10:59:35Z",
+ "duration_seconds": 111.5,
+ "flagged": 21,
+ "last_success": "2026-11-15T11:20:55Z",
  "package_errors": 0,
- "scanned": 417,
+ "scanned": 415,
  "skipped": {
-  "already-scanned": 3,
-  "gone": 18,
-  "metadata-too-large": 1
+  "already-scanned": 13,
+  "gone": 10,
+  "metadata-too-large": 2
  },
  "status": "ok",
  "warnings": []

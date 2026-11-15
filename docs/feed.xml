@@ -5,7 +5,198 @@
     <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/</link>
     <description>PkgWatch statically analyses newly published npm and PyPI packages and lists the ones that look suspicious. Entries are leads for human review, not verdicts.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 10:59:35 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 11:20:55 GMT</lastBuildDate>
+    <item>
+      <title>[LOW 35] suspicious pypi package: runpane 2.4.226</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/runpane/2.4.226</link>
+      <guid isPermaLink="false">pkgwatch:pypi/runpane/2.4.226</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 35/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/runpane/2.4.226/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Frunpane%402.4.226&amp;amp;package=pypi%2Frunpane%402.4.226"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 20] suspicious pypi package: probe-research 0.561.0</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/probe-research/0.561.0</link>
+      <guid isPermaLink="false">pkgwatch:pypi/probe-research/0.561.0</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 20/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Compiled executable or library in a package that is not declared as native.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/probe-research/0.561.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fprobe-research%400.561.0&amp;amp;package=pypi%2Fprobe-research%400.561.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[MEDIUM 45] suspicious pypi package: package-alert 0.10.2</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/package-alert/0.10.2</link>
+      <guid isPermaLink="false">pkgwatch:pypi/package-alert/0.10.2</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>obfuscation</category>
+      <description>&lt;p&gt;Risk score 45/100 (medium).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/package-alert/0.10.2/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fpackage-alert%400.10.2&amp;amp;package=pypi%2Fpackage-alert%400.10.2"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 20] suspicious pypi package: mcta 0.0.10</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/mcta/0.0.10</link>
+      <guid isPermaLink="false">pkgwatch:pypi/mcta/0.0.10</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>obfuscation</category>
+      <description>&lt;p&gt;Risk score 20/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Strings are assembled from long character-code chains. (in 2 files)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/mcta/0.0.10/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fmcta%400.0.10&amp;amp;package=pypi%2Fmcta%400.0.10"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 16] suspicious pypi package: kist 0.2.11</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/kist/0.2.11</link>
+      <guid isPermaLink="false">pkgwatch:pypi/kist/0.2.11</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>typosquat</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 16/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'hist' (one character substituted).&lt;/li&gt;&lt;li&gt;Missing or placeholder repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/kist/0.2.11/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fkist%400.2.11&amp;amp;package=pypi%2Fkist%400.2.11"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 16] suspicious pypi package: kenboard 0.5.5</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/kenboard/0.5.5</link>
+      <guid isPermaLink="false">pkgwatch:pypi/kenboard/0.5.5</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>typosquat</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 16/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'keyboard' (one character substituted).&lt;/li&gt;&lt;li&gt;Missing or placeholder repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/kenboard/0.5.5/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fkenboard%400.5.5&amp;amp;package=pypi%2Fkenboard%400.5.5"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 32] suspicious pypi package: fuzlog 0.3.0</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/fuzlog/0.3.0</link>
+      <guid isPermaLink="false">pkgwatch:pypi/fuzlog/0.3.0</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>new-publisher-similar-name</category>
+      <category>typosquat</category>
+      <description>&lt;p&gt;Risk score 32/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'mozlog'.&lt;/li&gt;&lt;li&gt;Name is 2 edit(s) from popular package 'mozlog' (two edits apart).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/fuzlog/0.3.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Ffuzlog%400.3.0&amp;amp;package=pypi%2Ffuzlog%400.3.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 32] suspicious pypi package: bdkit 0.1.0</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/bdkit/0.1.0</link>
+      <guid isPermaLink="false">pkgwatch:pypi/bdkit/0.1.0</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>new-publisher-similar-name</category>
+      <category>typosquat</category>
+      <description>&lt;p&gt;Risk score 32/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'rdkit'.&lt;/li&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'rdkit' (one character substituted).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/bdkit/0.1.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fbdkit%400.1.0&amp;amp;package=pypi%2Fbdkit%400.1.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[MEDIUM 40] suspicious npm package: dsh-m 0.12.19</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/dsh-m/0.12.19</link>
+      <guid isPermaLink="false">pkgwatch:npm/dsh-m/0.12.19</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>exfiltration</category>
+      <description>&lt;p&gt;Risk score 40/100 (medium).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/dsh-m/v/0.12.19"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2Fdsh-m%400.12.19&amp;amp;package=npm%2Fdsh-m%400.12.19"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 33] suspicious npm package: @taodigital/agent-cli 1.2.5</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@taodigital/agent-cli/1.2.5</link>
+      <guid isPermaLink="false">pkgwatch:npm/@taodigital/agent-cli/1.2.5</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>npm-install-hook</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 33/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;'postinstall' script runs a bundled JavaScript file at install time.&lt;/li&gt;&lt;li&gt;Missing or placeholder README, repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@taodigital/agent-cli/v/1.2.5"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40taodigital%2Fagent-cli%401.2.5&amp;amp;package=npm%2F%40taodigital%2Fagent-cli%401.2.5"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 39] suspicious npm package: @roomi-fields/grillhouse 0.39.0</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@roomi-fields/grillhouse/0.39.0</link>
+      <guid isPermaLink="false">pkgwatch:npm/@roomi-fields/grillhouse/0.39.0</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>binary-dropper</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 39/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;li&gt;Missing or placeholder README.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@roomi-fields/grillhouse/v/0.39.0"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40roomi-fields%2Fgrillhouse%400.39.0&amp;amp;package=npm%2F%40roomi-fields%2Fgrillhouse%400.39.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 35] suspicious npm package: @peakflo/agent-harness 0.2.31</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@peakflo/agent-harness/0.2.31</link>
+      <guid isPermaLink="false">pkgwatch:npm/@peakflo/agent-harness/0.2.31</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 35/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@peakflo/agent-harness/v/0.2.31"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40peakflo%2Fagent-harness%400.2.31&amp;amp;package=npm%2F%40peakflo%2Fagent-harness%400.2.31"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[MEDIUM 45] suspicious npm package: @ogai/llama.rn 0.13.0-b12406</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@ogai/llama.rn/0.13.0-b12406</link>
+      <guid isPermaLink="false">pkgwatch:npm/@ogai/llama.rn/0.13.0-b12406</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>npm-install-hook</category>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 45/100 (medium).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;'postinstall' script runs a bundled JavaScript file at install time.&lt;/li&gt;&lt;li&gt;Compiled executable or library in a package that is not declared as native.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@ogai/llama.rn/v/0.13.0-b12406"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40ogai%2Fllama.rn%400.13.0-b12406&amp;amp;package=npm%2F%40ogai%2Fllama.rn%400.13.0-b12406"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 35] suspicious npm package: @north-light/api 0.3.700</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@north-light/api/0.3.700</link>
+      <guid isPermaLink="false">pkgwatch:npm/@north-light/api/0.3.700</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 35/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@north-light/api/v/0.3.700"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40north-light%2Fapi%400.3.700&amp;amp;package=npm%2F%40north-light%2Fapi%400.3.700"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 29] suspicious npm package: @mrrlin-dev/mcp 0.4.221</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@mrrlin-dev/mcp/0.4.221</link>
+      <guid isPermaLink="false">pkgwatch:npm/@mrrlin-dev/mcp/0.4.221</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>npm-install-hook</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 29/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;'postinstall' script runs a bundled JavaScript file at install time.&lt;/li&gt;&lt;li&gt;Missing or placeholder repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@mrrlin-dev/mcp/v/0.4.221"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40mrrlin-dev%2Fmcp%400.4.221&amp;amp;package=npm%2F%40mrrlin-dev%2Fmcp%400.4.221"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 35] suspicious npm package: @midsummer-ai/cli 0.1.389-staging.4366</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@midsummer-ai/cli/0.1.389-staging.4366</link>
+      <guid isPermaLink="false">pkgwatch:npm/@midsummer-ai/cli/0.1.389-staging.4366</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 35/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@midsummer-ai/cli/v/0.1.389-staging.4366"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40midsummer-ai%2Fcli%400.1.389-staging.4366&amp;amp;package=npm%2F%40midsummer-ai%2Fcli%400.1.389-staging.4366"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 33] suspicious npm package: @kilncraft/cli 1.2.1</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@kilncraft/cli/1.2.1</link>
+      <guid isPermaLink="false">pkgwatch:npm/@kilncraft/cli/1.2.1</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>npm-install-hook</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 33/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;'postinstall' script runs a bundled JavaScript file at install time.&lt;/li&gt;&lt;li&gt;Missing or placeholder description, repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@kilncraft/cli/v/1.2.1"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40kilncraft%2Fcli%401.2.1&amp;amp;package=npm%2F%40kilncraft%2Fcli%401.2.1"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[MEDIUM 42] suspicious npm package: @hearsay-tools/squawk 0.18.0-dev.6591</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@hearsay-tools/squawk/0.18.0-dev.6591</link>
+      <guid isPermaLink="false">pkgwatch:npm/@hearsay-tools/squawk/0.18.0-dev.6591</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>suspicious-endpoint</category>
+      <category>obfuscation</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 42/100 (medium).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Hardcoded ngrok tunnel in package code.&lt;/li&gt;&lt;li&gt;Long base64 or hex blob embedded in source code.&lt;/li&gt;&lt;li&gt;Missing or placeholder README.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@hearsay-tools/squawk/v/0.18.0-dev.6591"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40hearsay-tools%2Fsquawk%400.18.0-dev.6591&amp;amp;package=npm%2F%40hearsay-tools%2Fsquawk%400.18.0-dev.6591"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 24] suspicious npm package: @fungi.computer/spore 0.14.9</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@fungi.computer/spore/0.14.9</link>
+      <guid isPermaLink="false">pkgwatch:npm/@fungi.computer/spore/0.14.9</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>obfuscation</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 24/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Strings are assembled from long character-code chains.&lt;/li&gt;&lt;li&gt;Missing or placeholder repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@fungi.computer/spore/v/0.14.9"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40fungi.computer%2Fspore%400.14.9&amp;amp;package=npm%2F%40fungi.computer%2Fspore%400.14.9"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 20] suspicious npm package: @fungi.computer/prints 0.17.3</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@fungi.computer/prints/0.17.3</link>
+      <guid isPermaLink="false">pkgwatch:npm/@fungi.computer/prints/0.17.3</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>obfuscation</category>
+      <description>&lt;p&gt;Risk score 20/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Strings are assembled from long character-code chains.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@fungi.computer/prints/v/0.17.3"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40fungi.computer%2Fprints%400.17.3&amp;amp;package=npm%2F%40fungi.computer%2Fprints%400.17.3"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 84] suspicious npm package: @dreamlake/dreamlake-cli 0.125.3</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@dreamlake/dreamlake-cli/0.125.3</link>
+      <guid isPermaLink="false">pkgwatch:npm/@dreamlake/dreamlake-cli/0.125.3</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>obfuscation</category>
+      <category>binary-dropper</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 84/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;li&gt;Missing or placeholder README.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@dreamlake/dreamlake-cli/v/0.125.3"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40dreamlake%2Fdreamlake-cli%400.125.3&amp;amp;package=npm%2F%40dreamlake%2Fdreamlake-cli%400.125.3"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[LOW 29] suspicious npm package: @carbonid1/design-system 7.6.2</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@carbonid1/design-system/7.6.2</link>
+      <guid isPermaLink="false">pkgwatch:npm/@carbonid1/design-system/7.6.2</guid>
+      <pubDate>Sun, 15 Nov 2026 11:20:55 GMT</pubDate>
+      <category>npm-install-hook</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 29/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;'postinstall' script runs a bundled JavaScript file at install time.&lt;/li&gt;&lt;li&gt;Missing or placeholder README.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@carbonid1/design-system/v/7.6.2"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40carbonid1%2Fdesign-system%407.6.2&amp;amp;package=npm%2F%40carbonid1%2Fdesign-system%407.6.2"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[LOW 20] suspicious pypi package: tgai-orv 0.9.77</title>
       <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/tgai-orv/0.9.77</link>
@@ -73,15 +264,6 @@
       <category>python-install-code</category>
       <category>python-install-code</category>
       <description>&lt;p&gt;Risk score 50/100 (medium).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;setup.py subprocess.check_output() starts a process at install time.&lt;/li&gt;&lt;li&gt;setup.py urllib.request.urlretrieve() opens a network connection at install time.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/flash-attn-npu/0.5.1.post1/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fflash-attn-npu%400.5.1.post1&amp;amp;package=pypi%2Fflash-attn-npu%400.5.1.post1"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[LOW 32] suspicious pypi package: bdkit 0.1.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/bdkit/0.1.0</link>
-      <guid isPermaLink="false">pkgwatch:pypi/bdkit/0.1.0</guid>
-      <pubDate>Sun, 15 Nov 2026 10:59:35 GMT</pubDate>
-      <category>new-publisher-similar-name</category>
-      <category>typosquat</category>
-      <description>&lt;p&gt;Risk score 32/100 (low).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'rdkit'.&lt;/li&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'rdkit' (one character substituted).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/bdkit/0.1.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fbdkit%400.1.0&amp;amp;package=pypi%2Fbdkit%400.1.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>[LOW 25] suspicious npm package: overlord-cli 0.2611151135.0</title>
