@@ -136,3 +136,10 @@ from it. Newest context first within each section.
   `respx`, `ruff`. Workflow YAML is checked with a small stdlib script, so PyYAML is not
   a dependency.
 - **Work happens directly on `main`**, as the brief asks.
+
+## Sample data
+
+- `docs/data`, the feeds and `reports/` were first populated by a local live dry run on
+  2026-11-15 (`--dry-run --limit 600 --output-dir docs --reports-dir reports`), so the
+  dashboard has real data before the first scheduled scan. `state/cursors.json` is
+  deliberately absent: the first scheduled scan cold-starts from the newest changes.

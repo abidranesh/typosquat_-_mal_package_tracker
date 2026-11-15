@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="PkgWatch statically analyses newly published npm and PyPI packages and lists the ones that look suspicious.">
+  <title>PkgWatch: suspicious new packages on npm and PyPI</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="alternate" type="application/rss+xml" title="PkgWatch: all listed packages" href="feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="PkgWatch: high risk only" href="feed-high.xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#/" aria-label="PkgWatch home">
+        <svg class="logo" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
+          <path d="M12 2 3 6.5v11L12 22l9-4.500v-11L12 2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="12" cy="12" r="1" fill="currentColor"/>
+        </svg>
+        <span>PkgWatch</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#/" data-nav="findings">Findings</a>
+        <a href="#/about" data-nav="about">About</a>
+        <a href="feed.xml">RSS</a>
+      </nav>
+      <div class="header-tools">
+        <span id="health" class="badge-health" role="status">checking…</span>
+        <button id="theme-toggle" type="button" class="ghost" aria-pressed="false">Light mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+    <noscript><p class="notice">PkgWatch needs JavaScript to load its data. The raw data is in <a href="data/latest.json">data/latest.json</a> and the <a href="feed.xml">RSS feed</a>.</p></noscript>
+    <p id="load-error" class="notice error" role="alert" hidden></p>
+
+    <!-- ============================== Findings view ============================== -->
+    <section id="view-findings" aria-labelledby="findings-heading">
+      <h1 id="findings-heading">Suspicious new packages</h1>
+      <p class="lede">Newly published npm and PyPI packages that static analysis found suspicious.
+        A listing is a lead for review, not a verdict. <a href="#/about">How this works</a>.</p>
+
+      <div class="stats" aria-label="Summary statistics">
+        <div class="stat">
+          <h2>Packages scanned</h2>
+          <dl>
+            <div><dt>24 h</dt><dd id="stat-scanned-24h">–</dd></div>
+            <div><dt>7 d</dt><dd id="stat-scanned-7d">–</dd></div>
+            <div><dt>All time</dt><dd id="stat-scanned-all">–</dd></div>
+          </dl>
+        </div>
+        <div class="stat">
+          <h2>Flagged as suspicious</h2>
+          <dl>
+            <div><dt>24 h</dt><dd id="stat-flagged-24h">–</dd></div>
+            <div><dt>7 d</dt><dd id="stat-flagged-7d">–</dd></div>
+            <div><dt>All time</dt><dd id="stat-flagged-all">–</dd></div>
+          </dl>
+        </div>
+        <div class="stat stat-high">
+          <h2>High risk</h2>
+          <dl>
+            <div><dt>24 h</dt><dd id="stat-high-24h">–</dd></div>
+            <div><dt>7 d</dt><dd id="stat-high-7d">–</dd></div>
+            <div><dt>All time</dt><dd id="stat-high-all">–</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <section class="panel" aria-labelledby="trend-heading">
+        <div class="panel-head">
+          <h2 id="trend-heading">Flagged per day</h2>
+          <p class="legend"><span class="swatch swatch-flagged"></span>flagged <span class="swatch swatch-high"></span>of which high risk</p>
+        </div>
+        <div id="chart" class="chart"></div>
+        <p id="chart-summary" class="muted small"></p>
+      </section>
+
+      <section class="panel" aria-labelledby="table-heading">
+        <h2 id="table-heading">Findings</h2>
+        <form id="filters" class="filters" role="search" aria-label="Filter findings">
+          <label class="grow">Search
+            <input id="f-search" type="search" placeholder="Package name, reason, target…" autocomplete="off">
+          </label>
+          <label>Ecosystem
+            <select id="f-ecosystem">
+              <option value="">All</option>
+              <option value="npm">npm</option>
+              <option value="pypi">PyPI</option>
+            </select>
+          </label>
+          <label>Severity
+            <select id="f-severity">
+              <option value="">All</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
+          </label>
+          <label>Detector
+            <select id="f-detector"><option value="">All</option></select>
+          </label>
+          <label>Date
+            <select id="f-day"><option value="">Latest 500</option></select>
+          </label>
+          <button type="reset" class="ghost">Clear</button>
+        </form>
+        <p id="result-count" class="muted small" aria-live="polite"></p>
+
+        <div class="table-scroll">
+          <table id="findings-table">
+            <thead>
+              <tr>
+                <th scope="col">Package</th>
+                <th scope="col">Ecosystem</th>
+                <th scope="col">Risk</th>
+                <th scope="col">Detectors</th>
+                <th scope="col">Published</th>
+                <th scope="col"><span class="sr-only">Details</span></th>
+              </tr>
+            </thead>
+            <tbody id="findings-body"></tbody>
+          </table>
+        </div>
+        <p id="empty" class="muted" hidden>No findings match these filters.</p>
+        <button id="show-more" type="button" class="ghost" hidden>Show more</button>
+      </section>
+    </section>
+
+    <!-- ============================== Package detail view ============================== -->
+    <section id="view-detail" aria-labelledby="detail-heading" hidden>
+      <p><a href="#/">← All findings</a></p>
+      <h1 id="detail-heading">Package</h1>
+      <div id="detail-body"></div>
+    </section>
+
+    <!-- ============================== About view ============================== -->
+    <section id="view-about" aria-labelledby="about-heading" hidden>
+      <h1 id="about-heading">About and methodology</h1>
+
+      <div class="notice">
+        <strong>Read this first.</strong> PkgWatch lists packages as <em>suspicious</em>. It does not
+        claim that any package is harmful. Everything here comes from automated pattern matching on
+        source code that was never run, and false positives happen: build tools, security scanners and
+        installers legitimately do many of the things an attack does. Treat every entry as a lead to
+        check yourself. If a listing is wrong, use its “Report a false positive” link.
+      </div>
+
+      <h2>What it does</h2>
+      <p>Every 20 minutes a GitHub Actions job reads what was newly published on npm and PyPI,
+        downloads each package's metadata and archive into memory, and inspects them statically.
+        Packages are never installed, imported or executed, and nothing is unpacked to disk. Packages
+        that score 15 or more are listed here, in the JSON data files and in the RSS feeds. There are no
+        servers, databases or paid services behind this page.</p>
+
+      <h2>Scoring</h2>
+      <p>Each detector that fires adds a weight. A package's risk score is the sum of the weights,
+        capped at 100.</p>
+      <table class="plain">
+        <thead><tr><th scope="col">Score</th><th scope="col">Level</th><th scope="col">Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>70–100</td><td><span class="sev sev-high">high</span></td><td>Several strong indicators together. A triage issue is opened for a human to review.</td></tr>
+          <tr><td>40–69</td><td><span class="sev sev-medium">medium</span></td><td>One strong indicator, or a few weaker ones that reinforce each other.</td></tr>
+          <tr><td>15–39</td><td><span class="sev sev-low">low</span></td><td>A single weak indicator. Usually benign; shown for completeness.</td></tr>
+          <tr><td>0–14</td><td>not listed</td><td>Only counted in the aggregate statistics.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Detectors</h2>
+      <h3>Name</h3>
+      <dl class="detectors">
+        <dt><code>typosquat</code></dt>
+        <dd>The name is one or two edits (insert, delete, substitute, swap) from a popular package. Names of five characters or fewer only match at one edit.</dd>
+        <dt><code>name-manipulation</code></dt>
+        <dd>A popular name with separators changed, look-alike characters (<code>rn</code> for <code>m</code>, <code>1</code> for <code>l</code>, <code>0</code> for <code>o</code>), an added prefix or suffix such as <code>python-</code> or <code>-utils</code>, or npm scope confusion such as <code>types-node</code> for <code>@types/node</code>.</dd>
+        <dt><code>combosquat</code></dt>
+        <dd>A popular name joined to generic words, such as <code>lodash-helper</code>.</dd>
+        <dt><code>dependency-confusion</code></dt>
+        <dd>An internal-looking name (<code>-internal</code>, <code>-private</code>, <code>-corp</code>) first published at a very high version such as 99.0.0, or any first release with such a version.</dd>
+      </dl>
+      <h3>Metadata</h3>
+      <dl class="detectors">
+        <dt><code>new-publisher-similar-name</code></dt>
+        <dd>A recently created package from a publisher with little history whose name resembles a popular package.</dd>
+        <dt><code>sparse-metadata</code></dt>
+        <dd>Missing or placeholder description, README or repository link. Never enough to list a package by itself.</dd>
+        <dt><code>repo-impersonation</code></dt>
+        <dd>The repository link points at the repository of the popular package being imitated.</dd>
+        <dt><code>popular-package-change</code></dt>
+        <dd>On a package that is itself popular: a newly added maintainer, or a large jump in size or version compared with the previous release.</dd>
+      </dl>
+      <h3>Content</h3>
+      <dl class="detectors">
+        <dt><code>npm-install-hook</code></dt>
+        <dd>A <code>preinstall</code>, <code>install</code> or <code>postinstall</code> script. Routine native-build hooks are ignored; scripts that run a shell, a downloader or a bundled file score higher.</dd>
+        <dt><code>python-install-code</code></dt>
+        <dd><code>setup.py</code> code (read as a syntax tree, never run) that opens network connections, starts processes, executes dynamic or decoded code, or writes outside the build directory; custom install commands; and <code>.pth</code> files with executable lines.</dd>
+        <dt><code>obfuscation</code></dt>
+        <dd>Code that decodes a hidden payload and executes it, long high-entropy strings, large base64 or hex blobs, character-code chains, and minified code in an otherwise tiny package.</dd>
+        <dt><code>exfiltration</code></dt>
+        <dd>Code that reads credential, browser, chat-token or wallet files, or serialises the whole environment, in a file that also makes network calls.</dd>
+        <dt><code>suspicious-endpoint</code></dt>
+        <dd>Hardcoded chat webhooks, tunnelling and request-capture hosts, paste sites, or URLs that use a raw IP address.</dd>
+        <dt><code>binary-dropper</code></dt>
+        <dd>Compiled executables in a package that is not declared as native, or code that downloads a file and then runs it.</dd>
+        <dt><code>unsafe-archive</code></dt>
+        <dd>The archive contains absolute paths or parent-directory entries and was not unpacked.</dd>
+      </dl>
+
+      <h2>Limits</h2>
+      <ul>
+        <li>Static analysis only: behaviour that depends on runtime conditions, or that is hidden well enough, is missed.</li>
+        <li>Archives above 10 MB compressed or 50 MB unpacked are scored on name and metadata alone.</li>
+        <li>Publisher age is estimated; registries do not publish account creation dates.</li>
+        <li>A clean bill here means nothing: unlisted packages were not vetted, only not flagged.</li>
+      </ul>
+
+      <h2>Data and feeds</h2>
+      <ul>
+        <li><a href="data/latest.json">data/latest.json</a>: the most recent 500 findings</li>
+        <li><a href="data/stats.json">data/stats.json</a>: counts and trends</li>
+        <li><a href="data/findings/index.json">data/findings/index.json</a>: the days available under <code>data/findings/YYYY/MM/DD.json</code> (kept for 365 days)</li>
+        <li><a href="feed.xml">feed.xml</a> and <a href="feed-high.xml">feed-high.xml</a>: RSS 2.0</li>
+        <li><a id="repo-link" href="https://github.com/abidranesh/typosquat_-_mal_package_tracker">Source code, weights and thresholds</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>PkgWatch lists packages as suspicious, with reasons. It is automated and makes mistakes.
+        <a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;labels=false-positive">Report a false positive</a>.</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
