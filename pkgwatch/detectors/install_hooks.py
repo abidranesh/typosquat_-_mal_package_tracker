@@ -14,7 +14,7 @@ _BENIGN = re.compile(
         node-gyp(\s+(rebuild|configure|build))* | node-gyp-build(-optional-packages)?(\s.*)? |
         prebuild-install(\s.*)? | node-pre-gyp\s+install(\s.*)? | prebuildify(\s.*)? |
         cmake-js(\s.*)? | electron-rebuild(\s.*)? | electron-builder\s+install-app-deps |
-        husky(\s+install)? | is-ci\s*\|\|\s*husky(\s+install)? | patch-package | ngcc(\s.*)? |
+        husky(\s+install)? | is-ci | patch-package | ngcc(\s.*)? |
         (npx\s+)?only-allow\s+\w+ | opencollective(-postinstall)?(\s.*)? |
         (npm|yarn|pnpm)\s+(run\s+)?(build|prepare|compile|bootstrap|generate)(:[\w-]+)? |
         tsc(\s.*)? | lerna\s+bootstrap | prisma\s+generate | nuxt\s+prepare |

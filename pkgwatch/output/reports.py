@@ -53,7 +53,7 @@ def false_positive_url(config: Config, record: dict[str, Any]) -> str:
 
 def _slug(text: str, limit: int) -> str:
     """Filesystem-safe and bounded; long values keep a hash so they stay unique."""
-    slug = _UNSAFE.sub("_", text).strip("._") or "_"
+    slug = re.sub(r"\.{2,}", ".", _UNSAFE.sub("_", text)).strip("._") or "_"
     if len(slug) > limit:
         digest = hashlib.sha1(text.encode("utf-8"), usedforsecurity=False).hexdigest()[:8]
         slug = f"{slug[: limit - 9]}-{digest}"

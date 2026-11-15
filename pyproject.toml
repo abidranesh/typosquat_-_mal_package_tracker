@@ -18,6 +18,7 @@ ignore = ["SIM102"]
 # Verbose regular expressions and embedded fixture sources read better unwrapped.
 "pkgwatch/detectors/*.py" = ["E501"]
 "scripts/build_fixtures.py" = ["E501"]
+"tests/*.py" = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

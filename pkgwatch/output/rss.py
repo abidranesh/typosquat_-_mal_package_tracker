@@ -36,7 +36,7 @@ def build_feed(records: list[dict[str, Any]], config: Config, *, high_only: bool
     ET.SubElement(channel, "link").text = config.project["site_url"]
     ET.SubElement(channel, "description").text = (
         f"{name} statically analyses newly published npm and PyPI packages and lists the "
-        "ones that look suspicious. Entries are leads for review, not confirmed malware."
+        "ones that look suspicious. Entries are leads for human review, not verdicts."
     )
     ET.SubElement(channel, "language").text = "en"
     if items and (built := _rfc822(items[0]["scanned_at"])):
