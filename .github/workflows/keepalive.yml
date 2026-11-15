@@ -1,0 +1,37 @@
+name: Keepalive
+
+# GitHub disables scheduled workflows in public repositories after 60 days without
+# repository activity. The scan bot's own commits normally prevent that; this monthly
+# no-op commit is the fallback for a long quiet spell.
+
+on:
+  schedule:
+    - cron: "41 5 1 * *" # 1st of each month, 05:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Touch state/keepalive
+        run: |
+          date -u +%Y-%m-%dT%H:%M:%SZ > state/keepalive
+          git config user.name "pkgwatch-bot"
+          git config user.email "pkgwatch-bot@users.noreply.github.com"
+          git add state/keepalive
+          git commit -q -m "chore: monthly keepalive"
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort || true; }
+            sleep $((attempt * 5))
+          done
+          echo "::error::Could not push the keepalive commit after 3 attempts."
+          exit 1

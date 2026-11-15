@@ -1,0 +1,75 @@
+name: Scan
+
+# Scans newly published npm and PyPI packages, publishes the findings under docs/,
+# and opens one triage issue per new high finding. Packages are never installed or run.
+
+on:
+  schedule:
+    - cron: "7,27,47 * * * *" # every 20 minutes, offset from the top of the hour
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum packages to process (default: config value)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Scan new packages
+        id: scan
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LIMIT: ${{ inputs.limit }}
+        run: |
+          if [ -n "$LIMIT" ]; then
+            python -m pkgwatch.scan --limit "$LIMIT"
+          else
+            python -m pkgwatch.scan
+          fi
+
+      # Runs even when the scan step failed: a partial run still wrote valid data and
+      # cursors for the part that worked. The job stays red because the scan step failed.
+      - name: Commit changed data
+        if: always() && steps.scan.conclusion != 'skipped' && steps.scan.conclusion != 'cancelled'
+        run: |
+          git config user.name "pkgwatch-bot"
+          git config user.email "pkgwatch-bot@users.noreply.github.com"
+          git add -A state docs/data docs/feed.xml docs/feed-high.xml reports
+          if git diff --cached --quiet; then
+            echo "Nothing changed; no commit."
+            exit 0
+          fi
+          git commit -q -m "data: scan $(date -u +%Y-%m-%dT%H:%MZ)"
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "Pushed on attempt ${attempt}."
+              exit 0
+            fi
+            echo "Push rejected (attempt ${attempt}); rebasing onto the remote."
+            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort || true; }
+            sleep $((attempt * 5))
+          done
+          echo "::error::Could not push scan results after 3 attempts."
+          exit 1
