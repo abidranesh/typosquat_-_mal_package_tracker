@@ -1,13 +1,15 @@
 {
- "duration_seconds": 111.5,
- "flagged": 21,
- "last_success": "2026-11-15T11:20:55Z",
+ "duration_seconds": 426.8,
+ "flagged": 125,
+ "last_success": "2026-11-15T14:43:12Z",
  "package_errors": 0,
- "scanned": 415,
+ "scanned": 1984,
  "skipped": {
-  "already-scanned": 13,
-  "gone": 10,
-  "metadata-too-large": 2
+  "already-scanned": 5,
+  "gone": 1,
+  "metadata-too-large": 1,
+  "no-files": 6,
+  "no-recent-version": 3
  },
  "status": "ok",
  "warnings": []
