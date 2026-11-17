@@ -1,14 +1,14 @@
 {
- "duration_seconds": 662.3,
- "flagged": 130,
- "last_success": "2026-11-16T20:28:36Z",
+ "duration_seconds": 474.8,
+ "flagged": 139,
+ "last_success": "2026-11-17T03:14:19Z",
  "package_errors": 0,
- "scanned": 1917,
+ "scanned": 1971,
  "skipped": {
-  "already-scanned": 2,
-  "gone": 4,
-  "no-files": 1,
-  "no-recent-version": 76
+  "already-scanned": 1,
+  "gone": 1,
+  "no-files": 3,
+  "no-recent-version": 24
  },
  "status": "ok",
  "warnings": []
