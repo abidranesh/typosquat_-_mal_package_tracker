@@ -5,7 +5,45 @@
     <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/</link>
     <description>PkgWatch statically analyses newly published npm and PyPI packages and lists the ones that look suspicious. Entries are leads for human review, not verdicts.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 19 Nov 2026 18:42:17 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:56:48 GMT</lastBuildDate>
+    <item>
+      <title>[HIGH 75] suspicious pypi package: mystack-rig 1.3.2</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/mystack-rig/1.3.2</link>
+      <guid isPermaLink="false">pkgwatch:pypi/mystack-rig/1.3.2</guid>
+      <pubDate>Fri, 20 Nov 2026 00:56:48 GMT</pubDate>
+      <category>exfiltration</category>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/mystack-rig/1.3.2/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fmystack-rig%401.3.2&amp;amp;package=pypi%2Fmystack-rig%401.3.2"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 85] suspicious pypi package: fixos 2.7.1</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/fixos/2.7.1</link>
+      <guid isPermaLink="false">pkgwatch:pypi/fixos/2.7.1</guid>
+      <pubDate>Fri, 20 Nov 2026 00:56:48 GMT</pubDate>
+      <category>obfuscation</category>
+      <category>exfiltration</category>
+      <description>&lt;p&gt;Risk score 85/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/fixos/2.7.1/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Ffixos%402.7.1&amp;amp;package=pypi%2Ffixos%402.7.1"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 100] suspicious pypi package: argus-scan 0.10.1</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/argus-scan/0.10.1</link>
+      <guid isPermaLink="false">pkgwatch:pypi/argus-scan/0.10.1</guid>
+      <pubDate>Fri, 20 Nov 2026 00:56:48 GMT</pubDate>
+      <category>obfuscation</category>
+      <category>exfiltration</category>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 100/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it. (in 2 files)&lt;/li&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/argus-scan/0.10.1/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fargus-scan%400.10.1&amp;amp;package=pypi%2Fargus-scan%400.10.1"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 80] suspicious npm package: @programinglive/dev-workflow-mcp-server 1.32.8</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@programinglive/dev-workflow-mcp-server/1.32.8</link>
+      <guid isPermaLink="false">pkgwatch:npm/@programinglive/dev-workflow-mcp-server/1.32.8</guid>
+      <pubDate>Fri, 20 Nov 2026 00:56:48 GMT</pubDate>
+      <category>binary-dropper</category>
+      <category>npm-install-hook</category>
+      <category>suspicious-endpoint</category>
+      <description>&lt;p&gt;Risk score 80/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;li&gt;'postinstall' script runs a bundled JavaScript file at install time.&lt;/li&gt;&lt;li&gt;URL with a raw IP address instead of a hostname.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@programinglive/dev-workflow-mcp-server/v/1.32.8"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40programinglive%2Fdev-workflow-mcp-server%401.32.8&amp;amp;package=npm%2F%40programinglive%2Fdev-workflow-mcp-server%401.32.8"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[HIGH 84] suspicious pypi package: stacktrace-cli 0.26.1</title>
       <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/stacktrace-cli/0.26.1</link>
@@ -143,67 +181,6 @@
       <category>python-install-code</category>
       <category>typosquat</category>
       <description>&lt;p&gt;Risk score 72/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;setup.py subprocess.run() starts a process at install time.&lt;/li&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'pyicu'.&lt;/li&gt;&lt;li&gt;setup.py writes a file outside the build directory at install time.&lt;/li&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'pyicu' (one character substituted).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/pyqcu/0.1.18/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fpyqcu%400.1.18&amp;amp;package=pypi%2Fpyqcu%400.1.18"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 75] suspicious npm package: vigiles 41.3.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/vigiles/41.3.0</link>
-      <guid isPermaLink="false">pkgwatch:npm/vigiles/41.3.0</guid>
-      <pubDate>Wed, 18 Nov 2026 19:38:35 GMT</pubDate>
-      <category>exfiltration</category>
-      <category>binary-dropper</category>
-      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/vigiles/v/41.3.0"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2Fvigiles%4041.3.0&amp;amp;package=npm%2Fvigiles%4041.3.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 100] suspicious pypi package: spellwarden 1.17.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/spellwarden/1.17.0</link>
-      <guid isPermaLink="false">pkgwatch:pypi/spellwarden/1.17.0</guid>
-      <pubDate>Wed, 18 Nov 2026 11:32:27 GMT</pubDate>
-      <category>obfuscation</category>
-      <category>binary-dropper</category>
-      <category>binary-dropper</category>
-      <description>&lt;p&gt;Risk score 100/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;li&gt;Compiled executable or library in a package that is not declared as native.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/spellwarden/1.17.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fspellwarden%401.17.0&amp;amp;package=pypi%2Fspellwarden%401.17.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 75] suspicious pypi package: sessionfs 0.32.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/sessionfs/0.32.0</link>
-      <guid isPermaLink="false">pkgwatch:pypi/sessionfs/0.32.0</guid>
-      <pubDate>Wed, 18 Nov 2026 11:32:27 GMT</pubDate>
-      <category>obfuscation</category>
-      <category>exfiltration</category>
-      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;li&gt;Code serialises the whole process environment in a file that makes network calls.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/sessionfs/0.32.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fsessionfs%400.32.0&amp;amp;package=pypi%2Fsessionfs%400.32.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 80] suspicious pypi package: pyqcd 0.5.1</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/pyqcd/0.5.1</link>
-      <guid isPermaLink="false">pkgwatch:pypi/pyqcd/0.5.1</guid>
-      <pubDate>Wed, 18 Nov 2026 11:32:27 GMT</pubDate>
-      <category>python-install-code</category>
-      <category>new-publisher-similar-name</category>
-      <category>python-install-code</category>
-      <category>typosquat</category>
-      <category>obfuscation</category>
-      <description>&lt;p&gt;Risk score 80/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;setup.py subprocess.run() starts a process at install time.&lt;/li&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'pyocd'.&lt;/li&gt;&lt;li&gt;setup.py writes a file outside the build directory at install time.&lt;/li&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'pyocd' (one character substituted).&lt;/li&gt;&lt;li&gt;Long base64 or hex blob embedded in source code.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/pyqcd/0.5.1/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fpyqcd%400.5.1&amp;amp;package=pypi%2Fpyqcd%400.5.1"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 80] suspicious pypi package: pyqcd 0.5.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/pyqcd/0.5.0</link>
-      <guid isPermaLink="false">pkgwatch:pypi/pyqcd/0.5.0</guid>
-      <pubDate>Wed, 18 Nov 2026 11:32:27 GMT</pubDate>
-      <category>python-install-code</category>
-      <category>new-publisher-similar-name</category>
-      <category>python-install-code</category>
-      <category>typosquat</category>
-      <category>obfuscation</category>
-      <description>&lt;p&gt;Risk score 80/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;setup.py subprocess.run() starts a process at install time.&lt;/li&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'pyocd'.&lt;/li&gt;&lt;li&gt;setup.py writes a file outside the build directory at install time.&lt;/li&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'pyocd' (one character substituted).&lt;/li&gt;&lt;li&gt;Long base64 or hex blob embedded in source code.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/pyqcd/0.5.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fpyqcd%400.5.0&amp;amp;package=pypi%2Fpyqcd%400.5.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 75] suspicious pypi package: mystack-rig 1.3.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/mystack-rig/1.3.0</link>
-      <guid isPermaLink="false">pkgwatch:pypi/mystack-rig/1.3.0</guid>
-      <pubDate>Wed, 18 Nov 2026 11:32:27 GMT</pubDate>
-      <category>exfiltration</category>
-      <category>binary-dropper</category>
-      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/mystack-rig/1.3.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fmystack-rig%401.3.0&amp;amp;package=pypi%2Fmystack-rig%401.3.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
