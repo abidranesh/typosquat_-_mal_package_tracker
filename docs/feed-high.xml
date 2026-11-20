@@ -5,7 +5,50 @@
     <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/</link>
     <description>PkgWatch statically analyses newly published npm and PyPI packages and lists the ones that look suspicious. Entries are leads for human review, not verdicts.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Nov 2026 17:21:32 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 23:15:56 GMT</lastBuildDate>
+    <item>
+      <title>[HIGH 80] suspicious pypi package: pyqcd 0.5.11</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/pyqcd/0.5.11</link>
+      <guid isPermaLink="false">pkgwatch:pypi/pyqcd/0.5.11</guid>
+      <pubDate>Fri, 20 Nov 2026 23:15:56 GMT</pubDate>
+      <category>python-install-code</category>
+      <category>new-publisher-similar-name</category>
+      <category>python-install-code</category>
+      <category>typosquat</category>
+      <category>obfuscation</category>
+      <description>&lt;p&gt;Risk score 80/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;setup.py subprocess.run() starts a process at install time.&lt;/li&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'pyocd'.&lt;/li&gt;&lt;li&gt;setup.py writes a file outside the build directory at install time.&lt;/li&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'pyocd' (one character substituted).&lt;/li&gt;&lt;li&gt;Long base64 or hex blob embedded in source code.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/pyqcd/0.5.11/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fpyqcd%400.5.11&amp;amp;package=pypi%2Fpyqcd%400.5.11"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 81] suspicious pypi package: clankit 0.1.7</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/clankit/0.1.7</link>
+      <guid isPermaLink="false">pkgwatch:pypi/clankit/0.1.7</guid>
+      <pubDate>Fri, 20 Nov 2026 23:15:56 GMT</pubDate>
+      <category>obfuscation</category>
+      <category>new-publisher-similar-name</category>
+      <category>typosquat</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 81/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'clikit'.&lt;/li&gt;&lt;li&gt;Name is 2 edit(s) from popular package 'clikit' (two edits apart).&lt;/li&gt;&lt;li&gt;Missing or placeholder repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/clankit/0.1.7/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fclankit%400.1.7&amp;amp;package=pypi%2Fclankit%400.1.7"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 81] suspicious pypi package: clankit 0.1.6</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/clankit/0.1.6</link>
+      <guid isPermaLink="false">pkgwatch:pypi/clankit/0.1.6</guid>
+      <pubDate>Fri, 20 Nov 2026 23:15:56 GMT</pubDate>
+      <category>obfuscation</category>
+      <category>new-publisher-similar-name</category>
+      <category>typosquat</category>
+      <category>sparse-metadata</category>
+      <description>&lt;p&gt;Risk score 81/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'clikit'.&lt;/li&gt;&lt;li&gt;Name is 2 edit(s) from popular package 'clikit' (two edits apart).&lt;/li&gt;&lt;li&gt;Missing or placeholder repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/clankit/0.1.6/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fclankit%400.1.6&amp;amp;package=pypi%2Fclankit%400.1.6"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 75] suspicious pypi package: calkit-python 0.52.2</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/calkit-python/0.52.2</link>
+      <guid isPermaLink="false">pkgwatch:pypi/calkit-python/0.52.2</guid>
+      <pubDate>Fri, 20 Nov 2026 23:15:56 GMT</pubDate>
+      <category>exfiltration</category>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/calkit-python/0.52.2/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fcalkit-python%400.52.2&amp;amp;package=pypi%2Fcalkit-python%400.52.2"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[HIGH 80] suspicious pypi package: pyqcd 0.5.8</title>
       <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/pyqcd/0.5.8</link>
@@ -104,43 +147,6 @@
       <category>unsafe-archive</category>
       <category>sparse-metadata</category>
       <description>&lt;p&gt;Risk score 84/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Archive contains absolute or parent-directory paths and was not unpacked.&lt;/li&gt;&lt;li&gt;Missing or placeholder repository URL.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/stacktrace-cli/0.26.1/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fstacktrace-cli%400.26.1&amp;amp;package=pypi%2Fstacktrace-cli%400.26.1"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 75] suspicious npm package: triss-coworker 0.44.5</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/triss-coworker/0.44.5</link>
-      <guid isPermaLink="false">pkgwatch:npm/triss-coworker/0.44.5</guid>
-      <pubDate>Thu, 19 Nov 2026 18:42:17 GMT</pubDate>
-      <category>exfiltration</category>
-      <category>binary-dropper</category>
-      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/triss-coworker/v/0.44.5"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2Ftriss-coworker%400.44.5&amp;amp;package=npm%2Ftriss-coworker%400.44.5"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 75] suspicious npm package: @pareto4/pp-core 1.25.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/npm/@pareto4/pp-core/1.25.0</link>
-      <guid isPermaLink="false">pkgwatch:npm/@pareto4/pp-core/1.25.0</guid>
-      <pubDate>Thu, 19 Nov 2026 18:42:17 GMT</pubDate>
-      <category>exfiltration</category>
-      <category>binary-dropper</category>
-      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://www.npmjs.com/package/@pareto4/pp-core/v/1.25.0"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20npm%2F%40pareto4%2Fpp-core%401.25.0&amp;amp;package=npm%2F%40pareto4%2Fpp-core%401.25.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 75] suspicious pypi package: skypilot-nightly 1.0.0.dev20261118</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/skypilot-nightly/1.0.0.dev20261118</link>
-      <guid isPermaLink="false">pkgwatch:pypi/skypilot-nightly/1.0.0.dev20261118</guid>
-      <pubDate>Thu, 19 Nov 2026 09:32:29 GMT</pubDate>
-      <category>exfiltration</category>
-      <category>binary-dropper</category>
-      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/skypilot-nightly/1.0.0.dev20261118/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fskypilot-nightly%401.0.0.dev20261118&amp;amp;package=pypi%2Fskypilot-nightly%401.0.0.dev20261118"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 100] suspicious pypi package: ranwhat 0.10.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/ranwhat/0.10.0</link>
-      <guid isPermaLink="false">pkgwatch:pypi/ranwhat/0.10.0</guid>
-      <pubDate>Thu, 19 Nov 2026 09:32:29 GMT</pubDate>
-      <category>obfuscation</category>
-      <category>exfiltration</category>
-      <category>binary-dropper</category>
-      <description>&lt;p&gt;Risk score 100/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code decodes or unpacks a hidden payload and executes it.&lt;/li&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/ranwhat/0.10.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Franwhat%400.10.0&amp;amp;package=pypi%2Franwhat%400.10.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
