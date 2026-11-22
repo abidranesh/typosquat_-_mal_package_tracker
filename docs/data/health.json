@@ -1,17 +1,17 @@
 {
- "duration_seconds": 663.7,
- "flagged": 93,
- "last_success": "2026-11-22T00:19:12Z",
+ "duration_seconds": 410.6,
+ "flagged": 106,
+ "last_success": "2026-11-22T07:16:07Z",
  "package_errors": 0,
- "scanned": 1975,
+ "scanned": 1833,
  "skipped": {
-  "metadata-too-large": 22,
-  "no-files": 1,
-  "no-recent-version": 2
+  "gone": 9,
+  "no-files": 4,
+  "no-recent-version": 154
  },
  "status": "ok",
  "warnings": [
-  "npm backlog of 418231 sequences exceeded the limit; skipped ahead",
-  "PyPI backlog of 63338 serials exceeded the limit; skipped ahead"
+  "npm backlog of 428322 sequences exceeded the limit; skipped ahead",
+  "PyPI backlog of 64182 serials exceeded the limit; skipped ahead"
  ]
 }
