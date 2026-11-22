@@ -5,7 +5,31 @@
     <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/</link>
     <description>PkgWatch statically analyses newly published npm and PyPI packages and lists the ones that look suspicious. Entries are leads for human review, not verdicts.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 15:33:33 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 21:19:25 GMT</lastBuildDate>
+    <item>
+      <title>[HIGH 80] suspicious pypi package: pyqcd 0.5.15</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/pyqcd/0.5.15</link>
+      <guid isPermaLink="false">pkgwatch:pypi/pyqcd/0.5.15</guid>
+      <pubDate>Sun, 22 Nov 2026 21:19:25 GMT</pubDate>
+      <category>python-install-code</category>
+      <category>new-publisher-similar-name</category>
+      <category>python-install-code</category>
+      <category>typosquat</category>
+      <category>obfuscation</category>
+      <description>&lt;p&gt;Risk score 80/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;setup.py subprocess.run() starts a process at install time.&lt;/li&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'pyocd'.&lt;/li&gt;&lt;li&gt;setup.py writes a file outside the build directory at install time.&lt;/li&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'pyocd' (one character substituted).&lt;/li&gt;&lt;li&gt;Long base64 or hex blob embedded in source code.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/pyqcd/0.5.15/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fpyqcd%400.5.15&amp;amp;package=pypi%2Fpyqcd%400.5.15"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 80] suspicious pypi package: pyqcd 0.5.14</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/pyqcd/0.5.14</link>
+      <guid isPermaLink="false">pkgwatch:pypi/pyqcd/0.5.14</guid>
+      <pubDate>Sun, 22 Nov 2026 21:19:25 GMT</pubDate>
+      <category>python-install-code</category>
+      <category>new-publisher-similar-name</category>
+      <category>python-install-code</category>
+      <category>typosquat</category>
+      <category>obfuscation</category>
+      <description>&lt;p&gt;Risk score 80/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;setup.py subprocess.run() starts a process at install time.&lt;/li&gt;&lt;li&gt;Recently created package from a publisher with little history, with a name similar to popular package 'pyocd'.&lt;/li&gt;&lt;li&gt;setup.py writes a file outside the build directory at install time.&lt;/li&gt;&lt;li&gt;Name is 1 edit(s) from popular package 'pyocd' (one character substituted).&lt;/li&gt;&lt;li&gt;Long base64 or hex blob embedded in source code.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/pyqcd/0.5.14/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fpyqcd%400.5.14&amp;amp;package=pypi%2Fpyqcd%400.5.14"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[HIGH 72] suspicious pypi package: yt-dlp 2026.11.20.232656.dev0</title>
       <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/yt-dlp/2026.11.20.232656.dev0</link>
