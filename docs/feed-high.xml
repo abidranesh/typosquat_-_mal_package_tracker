@@ -5,7 +5,34 @@
     <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/</link>
     <description>PkgWatch statically analyses newly published npm and PyPI packages and lists the ones that look suspicious. Entries are leads for human review, not verdicts.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 21:19:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 01:54:32 GMT</lastBuildDate>
+    <item>
+      <title>[HIGH 75] suspicious pypi package: simplon 0.48.0</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/simplon/0.48.0</link>
+      <guid isPermaLink="false">pkgwatch:pypi/simplon/0.48.0</guid>
+      <pubDate>Mon, 23 Nov 2026 01:54:32 GMT</pubDate>
+      <category>exfiltration</category>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/simplon/0.48.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fsimplon%400.48.0&amp;amp;package=pypi%2Fsimplon%400.48.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 75] suspicious pypi package: huyab-install-tools 1.0.0</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/huyab-install-tools/1.0.0</link>
+      <guid isPermaLink="false">pkgwatch:pypi/huyab-install-tools/1.0.0</guid>
+      <pubDate>Mon, 23 Nov 2026 01:54:32 GMT</pubDate>
+      <category>exfiltration</category>
+      <category>binary-dropper</category>
+      <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/huyab-install-tools/1.0.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fhuyab-install-tools%401.0.0&amp;amp;package=pypi%2Fhuyab-install-tools%401.0.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[HIGH 70] suspicious pypi package: axor-wrap 0.3.0</title>
+      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/axor-wrap/0.3.0</link>
+      <guid isPermaLink="false">pkgwatch:pypi/axor-wrap/0.3.0</guid>
+      <pubDate>Mon, 23 Nov 2026 01:54:32 GMT</pubDate>
+      <category>exfiltration</category>
+      <category>exfiltration</category>
+      <description>&lt;p&gt;Risk score 70/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code serialises the whole process environment in a file that makes network calls.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/axor-wrap/0.3.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Faxor-wrap%400.3.0&amp;amp;package=pypi%2Faxor-wrap%400.3.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[HIGH 80] suspicious pypi package: pyqcd 0.5.15</title>
       <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/pyqcd/0.5.15</link>
@@ -166,28 +193,6 @@
       <category>exfiltration</category>
       <category>binary-dropper</category>
       <description>&lt;p&gt;Risk score 75/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;Code downloads a file and then executes it or marks it executable.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/lium.io/0.46.9/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Flium.io%400.46.9&amp;amp;package=pypi%2Flium.io%400.46.9"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 100] suspicious pypi package: prismor 1.78.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/prismor/1.78.0</link>
-      <guid isPermaLink="false">pkgwatch:pypi/prismor/1.78.0</guid>
-      <pubDate>Sat, 21 Nov 2026 12:54:11 GMT</pubDate>
-      <category>exfiltration</category>
-      <category>python-install-code</category>
-      <category>exfiltration</category>
-      <category>typosquat</category>
-      <description>&lt;p&gt;Risk score 100/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;A .pth file contains an executable import line that runs on every Python start-up.&lt;/li&gt;&lt;li&gt;Code serialises the whole process environment in a file that makes network calls.&lt;/li&gt;&lt;li&gt;Name is 2 edit(s) from popular package 'prison' (two edits apart).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/prismor/1.78.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fprismor%401.78.0&amp;amp;package=pypi%2Fprismor%401.78.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>[HIGH 100] suspicious pypi package: prismor 1.77.0</title>
-      <link>https://abidranesh.github.io/typosquat_-_mal_package_tracker/#/pypi/prismor/1.77.0</link>
-      <guid isPermaLink="false">pkgwatch:pypi/prismor/1.77.0</guid>
-      <pubDate>Sat, 21 Nov 2026 12:54:11 GMT</pubDate>
-      <category>exfiltration</category>
-      <category>python-install-code</category>
-      <category>exfiltration</category>
-      <category>typosquat</category>
-      <description>&lt;p&gt;Risk score 100/100 (high).&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Code reads credential, browser, chat-token or wallet files and also makes network calls in the same file.&lt;/li&gt;&lt;li&gt;A .pth file contains an executable import line that runs on every Python start-up.&lt;/li&gt;&lt;li&gt;Code serialises the whole process environment in a file that makes network calls.&lt;/li&gt;&lt;li&gt;Name is 2 edit(s) from popular package 'prison' (two edits apart).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://pypi.org/project/prismor/1.77.0/"&gt;Registry page&lt;/a&gt; · &lt;a href="https://github.com/abidranesh/typosquat_-_mal_package_tracker/issues/new?template=false-positive.yml&amp;amp;labels=false-positive&amp;amp;title=False%20positive%3A%20pypi%2Fprismor%401.77.0&amp;amp;package=pypi%2Fprismor%401.77.0"&gt;Report a false positive&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
